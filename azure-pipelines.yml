@@ -6,17 +6,13 @@
 trigger:
 - main
 
-variables:
-  GITHUB_TOKEN: $(GITHUB_TOKEN)
-
 pool:
   name: 'self hosted pool'
 
 strategy:
   matrix:
     Python38:
-      python.version: '3.13'
-
+      python.version: '3.13'  # Using Python 3.13 as per your choice
 
 steps:
 - task: UsePythonVersion@0
