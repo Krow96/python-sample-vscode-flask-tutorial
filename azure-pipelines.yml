@@ -6,7 +6,7 @@ pool:
 
 steps:
 - script: |
-    python --version  # Verify that the correct version of Python is being used
+    python --version   # Verify that the correct version of Python is being used
     python -m pip install --upgrade pip
     pip install -r requirements.txt
   displayName: 'Install dependencies'
